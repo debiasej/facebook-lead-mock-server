@@ -6,6 +6,7 @@ var jsonDb = jsonfile.readFileSync('./db.json')
 // Create an object for config file
 var db = { leads: { data:[] } }
 
+// Create an object for lead fields. Use casual to create random fields
 function createFields(){
   var fields = [
      {
@@ -81,5 +82,3 @@ jsonfile.writeFile('./db.json', db, function (err) {
   if (err)
     console.error(err)
 })
-
-//console.log( JSON.stringify(db) )
