@@ -3,7 +3,6 @@ var dateFormat = require('dateformat')
 var jsonfile = require('jsonfile')
 var jsonDb = jsonfile.readFileSync('./db.json')
 
-
 // Create an object for config file
 var db = { leads: { data:[] } }
 

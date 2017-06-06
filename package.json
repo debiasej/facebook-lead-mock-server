@@ -6,7 +6,10 @@
   "scripts": {
     "create-mock": "node mockdata.js",
     "dev": "npm run create-mock && nodemon server.js",
-    "start": "npm run create-mock && server.js"
+    "start": "npm run create-mock && node server.js"
+  },
+  "engines": {
+    "node": "6.2.0"
   },
   "author": "Mario de Biase",
   "license": "ISC",
