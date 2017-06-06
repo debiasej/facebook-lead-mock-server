@@ -1,0 +1,22 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "A test server to generate leads",
+  "main": "index.js",
+  "scripts": {
+    "create-mock": "node mockdata.js",
+    "dev": "npm run create-mock && nodemon server.js",
+    "start": "npm run create-mock && server.js"
+  },
+  "author": "Mario de Biase",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "casual": "^1.5.12",
+    "dateformat": "^2.0.0",
+    "json-server": "^0.10.1",
+    "jsonfile": "^3.0.0"
+  }
+}
