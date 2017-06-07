@@ -30,16 +30,20 @@ function createFields(){
        values: [casual.zip(digits = (5))]
      },
      {
-       name: "phone_number",
+       name: 'phone_number',
        values: [casual.phone]
      },
      {
-       name: "email",
+       name: 'email',
        values: [""]
      },
      {
-       name: "deseo_recibir_el_boletín_kia",
-       values: ["sí"]
+  		 name: 'modelo',
+  		 values: [casual.random_element(['Carens', 'Carnival', 'Ceed', 'NuevoRio', 'Picanto', 'Sorento'])]
+			},
+     {
+       name: 'deseo_recibir_el_boletín_kia',
+       values: ['sí']
      }
    ]
 
@@ -52,7 +56,7 @@ for( var i = 0; i < numLeads; i++ ) {
     var lead = {}
     var fields = createFields();
     var now = new Date()
-    now.setSeconds(now.getSeconds() + ( 120 * i ));
+    now.setSeconds(now.getSeconds() + ( 10 * i ));
 
     lead.created_time = dateFormat(now, "isoDateTime")
     lead.id = "" + casual.integer(from = 100000, to = 100000000000)
