@@ -39,7 +39,7 @@ function createFields(){
      },
      {
   		 name: 'modelo',
-  		 values: [casual.random_element(['Carens', 'Carnival', 'Ceed', 'NuevoRio', 'Picanto', 'Sorento'])]
+  		 values: [casual.random_element(['Carens', 'Carnival', 'cee´d', 'Niro', 'Picanto', 'Sorento', 'pro_cee´d', 'pro_cee´d GT'])]
 			},
      {
        name: 'deseo_recibir_el_boletín_kia',
