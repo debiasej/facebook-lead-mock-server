@@ -1,7 +1,7 @@
 var casual = require('casual')
 var dateFormat = require('dateformat')
 var jsonfile = require('jsonfile')
-var jsonDb = jsonfile.readFileSync('./db.json')
+//var jsonDb = jsonfile.readFileSync('./db.json')
 
 // Create an object for config file
 var db = { leads: { data:[] } }
@@ -71,7 +71,7 @@ for( var i = 0; i < numLeads; i++ ) {
 
     lead.field_data = fields
 
-    db.leads.data = jsonDb.leads.data
+    //db.leads.data = jsonDb.leads.data
     db.leads.data.push(lead)
 }
 
