@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A test server to generate leads",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/debiasej/facebook-lead-mock-server.git"
+  },
   "scripts": {
     "create-mock": "node mockdata.js",
     "dev": "npm run create-mock && nodemon server.js",
