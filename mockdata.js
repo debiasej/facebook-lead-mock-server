@@ -50,7 +50,7 @@ function createFields(){
   return fields
 }
 
-var numLeads = casual.integer(from = 1, to = 5)
+var numLeads = 1 //casual.integer(from = 1, to = 5)
 
 for( var i = 0; i < numLeads; i++ ) {
     var lead = {}
